@@ -76,6 +76,26 @@ This project provides an implementation of the **Fractional Knapsack Problem** u
 Given `n` items with certain values and weights, and a knapsack with a maximum capacity, determine the maximum value that can be obtained by placing items into the knapsack. **You can include fractional parts of items.**.
 ---
 
+# Fiveth File - 📏 Rod Cutting Problem:
+  ## 🧮 Rod Cutting Problem Solution in C++
+
+This module contains implementations of the classic **Rod Cutting Problem**, a fundamental example in dynamic programming.
+
+### 🧠 Problem Description
+Given a rod of length `n` and an array `prices[]` where `prices[i]` represents the price of a rod of length `i+1`, the objective is to determine the maximum total value obtainable by cutting the rod into pieces and selling them.
+
+### ✅ Implementations Included
+- **Recursive Solution** – Simple and intuitive, but inefficient for large inputs due to repeated computations.
+- **Memoized (Top-Down DP)** – Improves performance using caching.
+- **Bottom-Up DP** – Efficient, iterative solution with optimal time complexity.
+
+### 💻 Example Usage (Python)
+```python
+prices = [1, 5, 8, 9, 10, 17, 17, 20]
+n = 8
+print(rod_cutting(prices, n))  # Output: 22
+```
+
 ### 📁 Files
 
 - `fractional_knapsack.cpp`: Source file with a full implementation of the fractional knapsack algorithm.
