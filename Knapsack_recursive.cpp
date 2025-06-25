@@ -24,7 +24,7 @@ int knapsack_recursive(int W, int wt[], int val[], int n)
 int main()
 {
     int W = 10; // Maximum weight capacity of the knapsack
-    int wt[] = {2, 2, 6, 4, 5}; // Weights of the items    
+    int wt[] = {1, 5, 8, 1, 7}; // Weights of the items    
     int val[] = {12, 25, 24, 15, 14}; // Values of the items
     int n = sizeof(val) / sizeof(val[0]); // Number of items
     cout << "Maximum value in Knapsack = " << knapsack_recursive(W, wt, val, n) << endl;

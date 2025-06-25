@@ -44,10 +44,11 @@ int down_knapsack(int W, vector<int> wt, vector<int> val, int n)
 
 int main()
 {
-    int W = 12;
-    const vector<int> wt = {2, 4, 3, 5, 5};
-    vector<int> val = {3, 4, 1, 2, 6};
+    int W = 10;
+    const vector<int> wt = {1, 2, 3, 3, 4, 2};
+    vector<int> val = {12, 4, 24, 36, 10, 24};
     int n = wt.size();
-    cout << "Maximum value in Knapsack = " << down_knapsack(W, wt, val, n) << endl;
+    int value = down_knapsack(W, wt, val, n);
+    cout << "Maximum value in Knapsack = " << value << endl;
     return 0;
 }

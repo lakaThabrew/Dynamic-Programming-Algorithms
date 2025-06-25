@@ -19,7 +19,6 @@ int knapsack(int W, int wt[], int val[], int n)
                 dp[i][w] = dp[i - 1][w];
         }
     }
-
     return dp[n][W];
 }
 
